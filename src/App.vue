@@ -40,7 +40,7 @@ const isRolesSelected = computed(() => {
         <RoleCard
           v-for="(role, index) in roles"
           @click="selectRole(index)"
-          :key="role.title"
+          :key="index"
           :title="role.title"
           :img="role.img"
           :active="role.active"
